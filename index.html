@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanState @ WACV 2027 | Multimodal Urban Sensing and Representation for Autonomous Mobility</title>
+  <meta name="description" content="UrbanState is a WACV 2027 workshop on multimodal urban sensing and representation for autonomous mobility, bringing together computer vision, autonomous driving, and intelligent transportation researchers.">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dynamic Point Cloud Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-overlay"></div>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="#" class="logo">UrbanState 2027</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#submission">Submission</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#pc">Program Committee</a></li>
+        <li><a href="#dates">Dates</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="radar-decor" aria-hidden="true">
+      <span class="wave-ring wave-1"></span>
+      <span class="wave-ring wave-2"></span>
+      <span class="wave-ring wave-3"></span>
+      <span class="wave-ring wave-4"></span>
+    </div>
+    <span class="badge">WACV 2027 Workshop &middot; 1st Edition</span>
+    <h1>UrbanState @ WACV 2027</h1>
+    <p>Multimodal Urban Sensing and Representation for Autonomous Mobility</p>
+    <div class="hero-meta">
+      <span class="pill"><i class="fa-solid fa-clock"></i> Half-Day Workshop</span>
+      <span class="pill"><i class="fa-solid fa-location-dot"></i> Orlando, FL &middot; WACV 2027</span>
+      <span class="pill"><i class="fa-solid fa-file-circle-check"></i> Papers Published in Proceedings</span>
+    </div>
+    <div class="btn-group">
+      <a href="#submission" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Submit Paper</a>
+      <a href="https://wacv.thecvf.com/Conferences/2027/AuthorGuides" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-solid fa-book-open"></i> WACV Author Guide</a>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title"><i class="fa-solid fa-city"></i> About the Workshop</h2>
+      <div class="card">
+        <p>
+          <strong>UrbanState</strong> invites work on methods that transform multimodal, distributed urban observations into persistent, uncertainty-aware representations for perception, reasoning, prediction, and action in autonomous mobility systems. The central research gap is not a lack of urban sensing, but the absence of representations that persist and remain uncertainty-aware across platforms, locations, and time&mdash;representations that can support decisions by road users, robots, and infrastructure alike.
+        </p>
+        <br>
+        <p>
+          Existing research often treats sensors and mobility traces as separate inputs, limiting cross-platform fusion, transfer, and city-scale reasoning. UrbanState brings together the computer vision, autonomous driving, intelligent transportation, and urban computing communities to advance cross-platform fusion, city-scale mapping, digital twins, uncertainty modeling, and representation-informed decision making. Orlando's active AV testing environment and WACV's applied focus make it a strong setting for discussion and collaboration.
+        </p>
+      </div>
+    </section>
+
+    <!-- Workshop Topics Grid -->
+    <section id="topics">
+      <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> Call for Papers &amp; Topics</h2>
+      <p class="section-sub">We invite contributions&mdash;including survey papers and applications&mdash;across the following areas of urban sensing and representation.</p>
+      <div class="topics-grid">
+        <div class="topic-item">
+          <h3><i class="fa-solid fa-eye"></i> Multimodal &amp; Cross-Platform Perception</h3>
+          <p>Multimodal and cross-platform perception methods for autonomous systems operating in complex urban environments.</p>
+        </div>
+        <div class="topic-item">
+          <h3><i class="fa-solid fa-city"></i> Urban Scene Representation</h3>
+          <p>Urban scene representation and understanding for persistent, city-scale reasoning.</p>
+        </div>
+        <div class="topic-item">
+          <h3><i class="fa-solid fa-route"></i> Representation-Informed Mobility</h3>
+          <p>Representation-informed perception, prediction, planning, and end-to-end mobility.</p>
+        </div>
+        <div class="topic-item">
+          <h3><i class="fa-solid fa-network-wired"></i> Cross-City &amp; Cross-Sensor Transfer</h3>
+          <p>Cross-city and cross-sensor transfer, along with vision-language and multimodal foundation models.</p>
+        </div>
+        <div class="topic-item">
+          <h3><i class="fa-solid fa-database"></i> Datasets, Benchmarks &amp; Evaluation</h3>
+          <p>Urban vision datasets, benchmarks, simulation, and evaluation protocols.</p>
+        </div>
+        <div class="topic-item">
+          <h3><i class="fa-solid fa-book"></i> Surveys &amp; Applications</h3>
+          <p>Survey papers and other applications for urban sensing and representation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keynote / Invited Speakers -->
+    <section id="speakers">
+      <h2 class="section-title"><i class="fa-solid fa-microphone"></i> Invited Speakers</h2>
+      <p class="section-sub">Our invited speaker lineup is being finalized. Check back soon for announcements.</p>
+      <div class="profile-grid">
+        <div class="profile-card">
+          <img src="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='150'%20height='150'><rect%20width='100%'%20height='100%'%20fill='%23161b26'/><circle%20cx='50%'%20cy='40%'%20r='27.0'%20fill='%232a3242'/><rect%20x='37.5'%20y='93.0'%20width='75.0'%20height='21.000000000000004'%20rx='10.500000000000002'%20fill='%232a3242'/><text%20x='50%'%20y='92%'%20font-family='sans-serif'%20font-size='22'%20fill='%239ca3af'%20text-anchor='middle'>TBA</text></svg>" alt="Speaker to be announced" class="profile-img">
+          <h3>To Be Announced</h3>
+          <p class="affiliation">Keynote Speaker</p>
+          <p class="bio">Details coming soon.</p>
+        </div>
+        <div class="profile-card">
+          <img src="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='150'%20height='150'><rect%20width='100%'%20height='100%'%20fill='%23161b26'/><circle%20cx='50%'%20cy='40%'%20r='27.0'%20fill='%232a3242'/><rect%20x='37.5'%20y='93.0'%20width='75.0'%20height='21.000000000000004'%20rx='10.500000000000002'%20fill='%232a3242'/><text%20x='50%'%20y='92%'%20font-family='sans-serif'%20font-size='22'%20fill='%239ca3af'%20text-anchor='middle'>TBA</text></svg>" alt="Speaker to be announced" class="profile-img">
+          <h3>To Be Announced</h3>
+          <p class="affiliation">Invited Speaker</p>
+          <p class="bio">Details coming soon.</p>
+        </div>
+        <div class="profile-card">
+          <img src="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='150'%20height='150'><rect%20width='100%'%20height='100%'%20fill='%23161b26'/><circle%20cx='50%'%20cy='40%'%20r='27.0'%20fill='%232a3242'/><rect%20x='37.5'%20y='93.0'%20width='75.0'%20height='21.000000000000004'%20rx='10.500000000000002'%20fill='%232a3242'/><text%20x='50%'%20y='92%'%20font-family='sans-serif'%20font-size='22'%20fill='%239ca3af'%20text-anchor='middle'>TBA</text></svg>" alt="Speaker to be announced" class="profile-img">
+          <h3>To Be Announced</h3>
+          <p class="affiliation">Invited Speaker</p>
+          <p class="bio">Details coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule">
+      <h2 class="section-title"><i class="fa-solid fa-list-ol"></i> Tentative Schedule</h2>
+      <p class="section-sub">Half-day format. Exact times will be finalized closer to the workshop.</p>
+      <div class="card">
+        <div class="schedule-list">
+          <div class="schedule-row">
+            <span class="schedule-time">8:00 AM</span>
+            <span class="schedule-desc">Registration Opens</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">8:30 &ndash; 8:40</span>
+            <span class="schedule-desc">Opening Remarks</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">8:40 &ndash; 9:30</span>
+            <span class="schedule-desc">Keynote</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">9:30 &ndash; 10:00</span>
+            <span class="schedule-desc">Spotlight Paper 1</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">10:00 &ndash; 10:15</span>
+            <span class="schedule-desc">Coffee Break (aligned with main conference)</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">10:15 &ndash; 10:45</span>
+            <span class="schedule-desc">Invited Talk</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">10:45 &ndash; 11:15</span>
+            <span class="schedule-desc">Spotlight Paper 2</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">11:15 &ndash; 11:45</span>
+            <span class="schedule-desc">Invited Talk</span>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">11:45 &ndash; 12:00</span>
+            <span class="schedule-desc">Closing Remarks</span>
+          </div>
+        </div>
+        <p class="note">Poster session details (12 poster boards requested) will be announced with the full program.</p>
+      </div>
+    </section>
+
+    <!-- Detailed Paper Submission Guidelines -->
+    <section id="submission">
+      <h2 class="section-title"><i class="fa-solid fa-file-lines"></i> Detailed Submission Guidelines</h2>
+      <div class="card">
+        <p>We invite authors to submit original, unpublished work on multimodal urban sensing and representation for autonomous mobility. Submissions are welcome across two tracks, described below.</p>
+
+        <br>
+        <h3 class="sub-title"><i class="fa-solid fa-layer-group"></i> Submission Tracks</h3>
+        <ul class="guidelines-list">
+          <li><strong>Track 1 &mdash; Regular Papers (Archival):</strong> Up to 8 pages (excluding references), following the main conference's formatting guidelines. We look for high-quality submissions with significant technical contributions and rigorous evaluation relevant to multimodal urban sensing, representation, and autonomous mobility. Accepted regular papers will be published in the <strong>WACV 2027 Workshop Proceedings</strong> and indexed in IEEE Xplore / CVF Open Access.</li>
+          <li><strong>Track 2 &mdash; Extended Abstracts (Non-Archival):</strong> Up to 4 pages (excluding references), for work-in-progress, position papers, preliminary ideas, demo descriptions, or relevant work already published/submitted elsewhere. Accepted extended abstracts will be presented as posters but will <em>not</em> appear in the official proceedings, allowing dual submission.</li>
+        </ul>
+
+        <br>
+        <h3 class="sub-title"><i class="fa-solid fa-list-check"></i> Formatting &amp; Policies</h3>
+        <ul class="guidelines-list">
+          <li><strong>Manuscript Format:</strong> All submissions must follow the official WACV 2027 paper template (LaTeX or Word) and formatting rules&mdash;margins, font, and page-limit specifications included. References do not count toward the page limit.</li>
+          <li><strong>Anonymity &amp; Double-Blind Review:</strong> All submissions must be completely anonymized. Do not include author names, affiliations, acknowledgments, or explicit self-citations that reveal authorship in the main text or supplementary material.</li>
+          <li><strong>Supplementary Material:</strong> Authors may optionally submit supplementary material (e.g., additional results, videos, or code) as a separate anonymized file, consistent with WACV 2027 policy.</li>
+          <li><strong>Review Process:</strong> Submissions will undergo double-blind peer review by the Program Committee. Reviewer recruitment continues to ensure full topical coverage&mdash;see the <a href="#pc" class="link-highlight" style="display:inline;">Program Committee</a> section.</li>
+          <li><strong>Dual Submission:</strong> Regular papers must describe original, unpublished work. Extended abstracts may include work submitted or published elsewhere, provided this is disclosed at submission.</li>
+        </ul>
+
+        <br>
+        <h3 class="sub-title"><i class="fa-solid fa-download"></i> Author Kit &amp; Templates</h3>
+        <p style="margin-bottom: 0.75rem;">Download the official WACV 2027 LaTeX/Word templates and detailed formatting instructions directly from the main conference Author Guide:</p>
+        <a href="https://wacv.thecvf.com/Conferences/2027/AuthorGuides" target="_blank" rel="noopener noreferrer" class="link-highlight"><i class="fa-solid fa-arrow-up-right-from-square"></i> Official WACV 2027 Author Guides &amp; Templates</a>
+
+        <br><br>
+        <div class="btn-group" style="justify-content: flex-start;">
+          <a href="https://wacv.thecvf.com/Conferences/2027/AuthorGuides" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download Author Kit</a>
+          <a href="#" class="btn btn-primary"><i class="fa-solid fa-upload"></i> OpenReview Submission Portal (coming soon)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers">
+      <h2 class="section-title"><i class="fa-solid fa-users"></i> Organizing Committee</h2>
+      <div class="profile-grid">
+        <div class="profile-card">
+          <img src="Images/Org/Reeshad Khan.jpeg" alt="Dr. Reeshad Khan" class="profile-img">
+          <h3>Dr. Reeshad Khan</h3>
+          <p class="affiliation">University of Central Florida &middot; Primary Contact</p>
+          <p class="bio">Postdoctoral Scholar working on sensor co-design and end-to-end driving, presented at ICCV, CVPR, and ECCV-affiliated workshops (including TinyBEV); currently working on vision-grounded urban mobility representation at UCF.</p>
+        </div>
+        <div class="profile-card">
+          <img src="Images/Org/Shaurya Agarwal.jpg" alt="Dr. Shaurya Agarwal" class="profile-img">
+          <h3>Dr. Shaurya Agarwal</h3>
+          <p class="affiliation">University of Central Florida</p>
+          <p class="bio">Associate Professor and founding director of the URBANITY Lab and Future City Initiative, focused on cyber-physical systems, smart transportation, and connected/autonomous vehicles. Associate editor, IEEE Transactions on Intelligent Transportation Systems.</p>
+        </div>
+        <div class="profile-card">
+          <img src="Images/Org/John Gauch.jpg" alt="Dr. John Gauch" class="profile-img">
+          <h3>Dr. John Gauch</h3>
+          <p class="affiliation">University of Arkansas</p>
+          <p class="bio">Professor whose research spans real-time video analysis, image processing, and computer vision, including scene-transition detection, large-scale video indexing and retrieval, and biomedical image segmentation and motion tracking.</p>
+        </div>
+        <div class="profile-card">
+          <img src="Images/Org/Susan Gauch.jpg" alt="Dr. Susan Gauch" class="profile-img">
+          <h3>Dr. Susan Gauch</h3>
+          <p class="affiliation">University of Arkansas</p>
+          <p class="bio">Professor researching information retrieval, ontologies, and personalization. Holds the Rodger S. Kline Leadership Chair; former head of the Department of Computer Science and Computer Engineering.</p>
+        </div>
+        <div class="profile-card">
+          <img src="Images/Org/Chuheng Wei.jpeg" alt="Dr. Chuheng Wei" class="profile-img">
+          <h3>Dr. Chuheng Wei</h3>
+          <p class="affiliation">Purdue University</p>
+          <p class="bio">Postdoctoral Researcher focused on multimodal perception, cooperative sensing, and human-centered AI for autonomous driving and intelligent transportation systems. Previously organized workshops at IV, ITSC, CVPR, and ICCV.</p>
+        </div>
+        <div class="profile-card">
+          <img src="Images/Org/Ziran Wang.jpeg" alt="Dr. Ziran Wang" class="profile-img">
+          <h3>Dr. Ziran Wang</h3>
+          <p class="affiliation">Purdue University</p>
+          <p class="bio">Assistant Professor with 80+ papers and 50+ patent applications on autonomous vehicles and intelligent transportation systems. Associate editor, IEEE T-ITS, T-IV, IoT Journal, and IEEE Network. Previously organized workshops at CVPR, ICCV, WACV, ITSC, and IV.</p>
+        </div>
+        <div class="profile-card">
+          <img src="Images/Org/Xishun Liao.jpeg" alt="Dr. Xishun Liao" class="profile-img">
+          <h3>Dr. Xishun Liao</h3>
+          <p class="affiliation">University of Central Florida</p>
+          <p class="bio">Assistant Professor with 30+ peer-reviewed papers on intelligent transportation systems, digital twin technology, autonomous driving, and applied AI/ML for smart mobility. Associate editor, IEEE Open Journal of Intelligent Transportation Systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Committee -->
+    <section id="pc">
+      <h2 class="section-title"><i class="fa-solid fa-user-shield"></i> Program Committee</h2>
+      <div class="profile-grid pc-grid">
+        <div class="profile-card compact">
+          <img src="Images/PC/Mezbaur Rahman.jpg" alt="Mezbaur Rahman" class="profile-img-sm">
+          <h4>Mezbaur Rahman</h4>
+          <p class="affiliation">Univ. of Illinois Chicago</p>
+        </div>
+        <div class="profile-card compact">
+          <img src="Images/PC/Tasnuva Tanjum Ferdous.jpg" alt="Tasnuva Tanjum Ferdous" class="profile-img-sm">
+          <h4>Tasnuva Tanjum Ferdous</h4>
+          <p class="affiliation">Univ. of Illinois Chicago</p>
+        </div>
+        <div class="profile-card compact">
+          <img src="Images/PC/Ibsa Kumara Jalata.jpeg" alt="Ibsa Kumara Jalata" class="profile-img-sm">
+          <h4>Dr. Ibsa Kumara Jalata</h4>
+          <p class="affiliation">Quantum Computing Inc.</p>
+        </div>
+        <div class="profile-card compact">
+          <img src="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='100'%20height='100'><rect%20width='100%'%20height='100%'%20fill='%23161b26'/><circle%20cx='50%'%20cy='40%'%20r='18.0'%20fill='%232a3242'/><rect%20x='25.0'%20y='62.0'%20width='50.0'%20height='14.000000000000002'%20rx='7.000000000000001'%20fill='%232a3242'/><text%20x='50%'%20y='92%'%20font-family='sans-serif'%20font-size='16'%20fill='%239ca3af'%20text-anchor='middle'>PC</text></svg>" alt="Hao Cheng" class="profile-img-sm">
+          <h4>Hao Cheng</h4>
+          <p class="affiliation">University of Central Florida</p>
+        </div>
+        <div class="profile-card compact">
+          <img src="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='100'%20height='100'><rect%20width='100%'%20height='100%'%20fill='%23161b26'/><circle%20cx='50%'%20cy='40%'%20r='18.0'%20fill='%232a3242'/><rect%20x='25.0'%20y='62.0'%20width='50.0'%20height='14.000000000000002'%20rx='7.000000000000001'%20fill='%232a3242'/><text%20x='50%'%20y='92%'%20font-family='sans-serif'%20font-size='16'%20fill='%239ca3af'%20text-anchor='middle'>PC</text></svg>" alt="Jingtao Lao" class="profile-img-sm">
+          <h4>Jingtao Lao</h4>
+          <p class="affiliation">University of Central Florida</p>
+        </div>
+        <div class="profile-card compact">
+          <img src="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='100'%20height='100'><rect%20width='100%'%20height='100%'%20fill='%23161b26'/><circle%20cx='50%'%20cy='40%'%20r='18.0'%20fill='%232a3242'/><rect%20x='25.0'%20y='62.0'%20width='50.0'%20height='14.000000000000002'%20rx='7.000000000000001'%20fill='%232a3242'/><text%20x='50%'%20y='92%'%20font-family='sans-serif'%20font-size='16'%20fill='%239ca3af'%20text-anchor='middle'>PC</text></svg>" alt="Haoyan Wang" class="profile-img-sm">
+          <h4>Haoyan Wang</h4>
+          <p class="affiliation">University of Central Florida</p>
+        </div>
+        <div class="profile-card compact">
+          <img src="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='100'%20height='100'><rect%20width='100%'%20height='100%'%20fill='%23161b26'/><circle%20cx='50%'%20cy='40%'%20r='18.0'%20fill='%232a3242'/><rect%20x='25.0'%20y='62.0'%20width='50.0'%20height='14.000000000000002'%20rx='7.000000000000001'%20fill='%232a3242'/><text%20x='50%'%20y='92%'%20font-family='sans-serif'%20font-size='16'%20fill='%239ca3af'%20text-anchor='middle'>PC</text></svg>" alt="Vuong Ho" class="profile-img-sm">
+          <h4>Vuong Ho</h4>
+          <p class="affiliation">University of Texas at Dallas</p>
+        </div>
+      </div>
+      <p class="note">Additional reviewers will be recruited to cover all CFP topics and submitted papers.</p>
+    </section>
+
+    <!-- Important Dates -->
+    <section id="dates">
+      <h2 class="section-title"><i class="fa-solid fa-calendar-days"></i> Important Dates</h2>
+      <div class="card">
+        <ul class="dates-list">
+          <li class="date-row">
+            <span class="date-label">Workshop Paper Submission Deadline:</span>
+            <span class="date-val">To Be Announced</span>
+          </li>
+          <li class="date-row">
+            <span class="date-label">Notification to Authors:</span>
+            <span class="date-val">To Be Announced</span>
+          </li>
+          <li class="date-row">
+            <span class="date-label">Camera-Ready Deadline:</span>
+            <span class="date-val">To Be Announced</span>
+          </li>
+          <li class="date-row">
+            <span class="date-label">Workshop Event Date:</span>
+            <span class="date-val">WACV 2027, Orlando, FL</span>
+          </li>
+        </ul>
+        <p class="note">Deadlines will be finalized and posted here once confirmed with the WACV 2027 organizing committee.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer with Visitor Tracker -->
+  <footer>
+    <p>&copy; 2027 UrbanState Workshop @ WACV. All rights reserved.</p>
+    <p class="contact-line">Contact: <a href="mailto:reeshad.khan@ucf.edu">reeshad.khan@ucf.edu</a></p>
+
+    <!-- Visitor Counter Tracker Widget -->
+    <div class="visitor-tracker" style="margin-top: 1.5rem;">
+      <p style="font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.5rem;">Visitor Traffic:</p>
+      <a href="https://info.flagcounter.com/urbanstate2027"><img src="https://s11.flagcounter.com/count2/urbanstate2027/bg_0B0E14/txt_F3F4F6/border_161B26/columns_4/maxflags_12/viewers_0/labels_1/pageviews_1/timeline_0/" alt="Flag Counter" border="0"></a>
+    </div>
+  </footer>
+
+  <script src="bg-animation.js"></script>
+</body>
+</html>
