@@ -522,6 +522,14 @@ footer {
   border: 2px solid var(--accent-blue);
 }
 
+.profile-haoyan {
+  object-position: 50% 32%;
+}
+
+.profile-fazle {
+  object-position: 78% 50%;
+}
+
 .profile-card h3 {
   font-size: 1.2rem;
   color: #fff;
