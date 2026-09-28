@@ -458,6 +458,11 @@ footer {
   border: 2px solid var(--accent-blue);
 }
 
+#speakers .profile-img {
+  width: 180px;
+  height: 180px;
+}
+
 .profile-haoyan {
   object-position: 50% 32%;
 }
