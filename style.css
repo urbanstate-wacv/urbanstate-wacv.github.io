@@ -382,6 +382,15 @@ section {
 .date-val {
   color: var(--accent-cyan);
   font-weight: 600;
+  text-align: right;
+}
+
+.date-local {
+  display: block;
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-top: 0.15rem;
 }
 
 /* ==========================================================================
